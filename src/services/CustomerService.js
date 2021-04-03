@@ -1,7 +1,7 @@
 import http from '../config/ConfigHttp';
 
-const getAll = () => {
-    return http.get(`/customers`)
+const getAll = async () => {
+    return await http.get(`/customers`)
 }
 
 const getById = id => {
